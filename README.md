@@ -28,11 +28,11 @@ Users should be able to:
 
 ### Screenshot
 
-Mobile mode (20231007):
+Mobile mode (20231010):
 <br/>
 <img src='./images/Screenshot 2023-10-10 at 20.53.07.png' width=250px>
 
-Desktop mode (20231009):
+Desktop mode:
 <br/>
 To be update
 
