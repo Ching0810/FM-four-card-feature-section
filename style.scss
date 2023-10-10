@@ -1,0 +1,121 @@
+$red: hsl(0, 78%, 62%);
+$cyan: hsl(180, 62%, 55%);
+$orange: hsl(34, 97%, 64%);
+$blue: hsl(212, 86%, 64%);
+$darkBlue: hsl(234, 12%, 34%);
+$grayishBlue: hsl(229, 6%, 66%);
+$lightGray: hsl(0, 0%, 98%);
+
+@mixin background-icon($image) {
+  background-image: url(./images/icon-#{$image}.svg);
+  background-size: cover;
+  background-position: center;
+}
+
+@mixin window-bar($color) {
+  position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3.5px;
+    border-radius: 10px 10px 0 0;
+    background-color: $color;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+}
+
+:root {
+  background-color: $lightGray;
+}
+
+.container {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .card {
+    width: 83%;
+    margin-top: 85px;
+    margin-bottom: 85px;
+    .main {
+      text-align: center;
+      color: $grayishBlue;
+      h1 {
+        font-weight: 200;
+        font-size: 24px;
+        &.bold-heading {
+          font-weight: 600;
+          color: $darkBlue;
+        }
+      }
+      p {
+        font-weight: 400;
+        font-size: 15px;
+        margin-top: 1rem;
+        margin-bottom: 4rem;
+      }
+    }
+    .windows {
+      display: grid;
+      grid-template-rows: repeat(4, 220px);
+      grid-gap: 25px;
+      .window {
+        background-color: white;
+        position: relative;
+        padding: 28px;
+        border-radius: 10px;
+        box-shadow: 5px 10px 10px rgba(105, 101, 101, 0.2),
+        -5px 10px 10px rgba(105, 101, 101, 0.2);
+        h2 {
+          font-size: 20px;
+          font-weight: 600;
+          color: $darkBlue;
+        }
+        p {
+          font-size: 13px;
+          color: $grayishBlue;
+          margin-top: 0.5rem;
+          line-height: 1.5rem;
+        }
+        .window-supervisor {
+          @include window-bar($cyan)
+        }
+        .window-team {
+          @include window-bar($red)
+        }
+        .window-karma {
+          @include window-bar($orange)
+        }
+        .window-calculator {
+          @include window-bar($blue)
+        }
+        .img {
+          width: 57px;
+          height: 57px;
+          position: absolute;
+          right: 28px;
+          bottom: 28px;
+          &.supervisor {
+            @include background-icon('supervisor');
+          }
+          &.team {
+            @include background-icon('team-builder');
+          }
+          &.karma {
+            @include background-icon('karma');
+          }
+          &.calculator {
+            @include background-icon('calculator');
+          }
+        }
+      }
+    }
+  }
+}
