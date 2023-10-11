@@ -42,28 +42,29 @@
 }
 .container .card .windows {
   display: grid;
-  grid-template-rows: repeat(4, 220px);
+  grid-template-rows: repeat(4, auto);
   grid-gap: 25px;
 }
-.container .card .windows .window {
+.container .card .windows .col .window {
   background-color: white;
   position: relative;
+  height: 220px;
   padding: 28px;
   border-radius: 10px;
   box-shadow: 5px 10px 10px rgba(105, 101, 101, 0.2), -5px 10px 10px rgba(105, 101, 101, 0.2);
 }
-.container .card .windows .window h2 {
+.container .card .windows .col .window h2 {
   font-size: 20px;
   font-weight: 600;
   color: hsl(234, 12%, 34%);
 }
-.container .card .windows .window p {
+.container .card .windows .col .window p {
   font-size: 13px;
   color: hsl(229, 6%, 66%);
   margin-top: 0.5rem;
   line-height: 1.5rem;
 }
-.container .card .windows .window .window-supervisor {
+.container .card .windows .col .window .window-supervisor {
   position: absolute;
   top: 0;
   left: 0;
@@ -72,7 +73,7 @@
   border-radius: 10px 10px 0 0;
   background-color: hsl(180, 62%, 55%);
 }
-.container .card .windows .window .window-team {
+.container .card .windows .col .window .window-team {
   position: absolute;
   top: 0;
   left: 0;
@@ -81,7 +82,7 @@
   border-radius: 10px 10px 0 0;
   background-color: hsl(0, 78%, 62%);
 }
-.container .card .windows .window .window-karma {
+.container .card .windows .col .window .window-karma {
   position: absolute;
   top: 0;
   left: 0;
@@ -90,7 +91,7 @@
   border-radius: 10px 10px 0 0;
   background-color: hsl(34, 97%, 64%);
 }
-.container .card .windows .window .window-calculator {
+.container .card .windows .col .window .window-calculator {
   position: absolute;
   top: 0;
   left: 0;
@@ -99,30 +100,69 @@
   border-radius: 10px 10px 0 0;
   background-color: hsl(212, 86%, 64%);
 }
-.container .card .windows .window .img {
+.container .card .windows .col .window .img {
   width: 57px;
   height: 57px;
   position: absolute;
   right: 28px;
   bottom: 28px;
 }
-.container .card .windows .window .img.supervisor {
+.container .card .windows .col .window .img.supervisor {
   background-image: url(./images/icon-supervisor.svg);
   background-size: cover;
   background-position: center;
 }
-.container .card .windows .window .img.team {
+.container .card .windows .col .window .img.team {
   background-image: url(./images/icon-team-builder.svg);
   background-size: cover;
   background-position: center;
 }
-.container .card .windows .window .img.karma {
+.container .card .windows .col .window .img.karma {
   background-image: url(./images/icon-karma.svg);
   background-size: cover;
   background-position: center;
 }
-.container .card .windows .window .img.calculator {
+.container .card .windows .col .window .img.calculator {
   background-image: url(./images/icon-calculator.svg);
   background-size: cover;
   background-position: center;
+}
+.container .card .windows .col .two {
+  margin-bottom: 25px;
+}
+
+@media screen and (min-width: 1440px) {
+  .container .card {
+    width: 77%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container .card .main {
+    width: 540px;
+  }
+  .container .card .main h1 {
+    font-size: 36px;
+  }
+  .container .card .windows {
+    all: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container .card .windows .col {
+    width: 30%;
+    margin: 0 15px;
+  }
+  .container .card .windows .col .window {
+    height: 250px;
+    padding: 32px;
+  }
+  .container .card .windows .col .window .img {
+    width: 64px;
+    height: 64px;
+  }
+  .container .card .windows .col .two {
+    margin-bottom: 30px;
+  }
 }/*# sourceMappingURL=style.css.map */

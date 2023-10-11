@@ -32,9 +32,9 @@ Mobile mode (20231010):
 <br/>
 <img src='./images/Screenshot 2023-10-10 at 20.53.07.png' width=250px>
 
-Desktop mode:
+Desktop mode (20231011):
 <br/>
-To be update
+<img scr='./images/Screenshot 2023-10-11 at 15.27.40.png' width=250px>
 
 
 ### Links
@@ -57,10 +57,11 @@ To be update
 1. Follow mobile first principle to finish responsive web design
 2. Utilize grid system to achieve card arrangement
 3. Utilize position system to fix image position
+4. Combine grid & flex system to achieve desktop page arrangement, incorporate with proper CSS class
 
 ### Continued development
 
-None
+Simplify redundant class and merge multiple CSS setting
 
 ### Useful resources
 
