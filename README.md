@@ -2,7 +2,7 @@
 
 This is a layout practicing project from frontend mentor (https://www.frontendmentor.io).
 <br/>
-RWD design including mobile, tablet & desktop mode, please refer to [screenshot section](#screenshot) for results.
+RWD design including mobile, tablet & desktop mode, please refer to [link section](#links) or [screenshot section](#screenshot) for results.
 
 ## Table of contents
 
@@ -34,12 +34,12 @@ Mobile mode (20231010):
 
 Desktop mode (20231011):
 <br/>
-<img scr='./images/Screenshot 2023-10-11 at 15.27.40.png' width=250px>
+<img src='./images/Screenshot 2023-10-11 at 15.27.40.png' width=700px>
 
 
 ### Links
 
-To be update
+Live link: https://boisterous-torrone-a5d19f.netlify.app/
 
 ## My process
 
