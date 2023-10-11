@@ -1,4 +1,4 @@
-# Frontend Mentor - Skilled e-learning landing page solution
+# Frontend Mentor - Four card feature section
 
 This is a layout practicing project from frontend mentor (https://www.frontendmentor.io).
 <br/>
